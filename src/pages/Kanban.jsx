@@ -181,7 +181,7 @@ const Kanban = ({ userId }) => {
 												) : null}
 											</div>
 										</div>
-										<div className='flex items-center text-blue-900 hover:bg-blue-600 hover:text-blue-50 bg-transparent transition duration-200 cursor-pointer hover:scale-110 rounded-sm px-2 py-1 mr-3 hidden sm:flex text-2xl'>
+										<div className='flex items-center text-blue-900 hover:bg-blue-600 hover:text-blue-50 bg-transparent transition duration-200 cursor-pointer hover:scale-110 rounded-sm px-2 py-1 mr-3 sm:flex text-2xl'>
 											<a href='https://github.com/luck-chap/nova' target='_blank' rel='noreferrer'>
 												<FaGithub />
 											</a>
