@@ -5,13 +5,13 @@ import 'firebase/auth'
 
 
 const firebaseConfig = {
-	apiKey: 'AIzaSyAbAZF5ZlK6OYu3GDAkzdHLgJA5F_vfQYw',
-	authDomain: 'nova-kanban-board.firebaseapp.com',
-	projectId: 'nova-kanban-board',
-	storageBucket: 'nova-kanban-board.appspot.com',
-	messagingSenderId: '708971563941',
-	appId: '1:708971563941:web:118f46ac8611cab27bb64c',
-	measurementId: 'G-KP8QB9QZQD',
+	apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+	authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+	projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+	storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+	appId: process.env.REACT_APP_FIREBASE_APP_ID,
+	measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 }
 
 // Initialize Firebase
