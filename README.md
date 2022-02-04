@@ -1,70 +1,124 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+![Screenshot](./src/assets/screenshot-1.png)
 
-In the project directory, you can run:
 
-### `npm start`
+![](./src/assets/nova-showcase.mp4)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Nova 🚀
+Create fast and efficient kanban boards, easily ✅❤️🔥
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Plain text/markdown notes** - take notes in an efficient way
+- **Markdown preview** - preview Markdown before saving
+- **Drag and drop** - drag and drop a column or a board
+- **Persistence** - all user data is stored in Firebase database
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## About
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Nova🚀 is a kanban board for productivity. It is a web based kanban planner with superpowers. Want to get some todos listed? We got you! What about some sorting of work? We got you there too!
+Our drag and drop feature allows you to move items anywhere you like, making them your own 👍
+Make use of our markdown editor too, it's pretty useful. Oh and, it also has a preview for markdown files built-in. 🤯
 
-### `npm run eject`
+#### Why  I built this:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- I wanted something fancy for my portfolio 🤩
+- I wanted to try out drag-n-drop libraries out there in the wild. I used `react-beautiful-dnd`
+- I wanted something that I could rely on to save simple notes while working in the browser
+- I wanted to know more firebase
+- I was curious about how people made it, so I decided to use the same resources to make mine
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I'm leaving the code available so you can feel free to host your own Nova🚀 instance or study the code for learning purposes. If you got any questions, just hit me up:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Twitter [@hunchodotdev](https://twitter.com/hunchodotdev)
+- Discord username [FatKidOnFiree#1355](FatKidOnFiree#1355) Add me as a friend ❤️
+- Email [hunchodotdev@gmail.com](mailto:hunchodotdev@gmail.com)
+- Email again [wartywarthog7@gmail.com](wartywarthog7@gmail.com)
+- Telegram [FatKidOnFiree](https://t.me/FatKidOnFiree)
+- Reddit username [yrn_quavo](yrn_quavo)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Nova was created with [React](https://reactjs.org) and [Firebase](https://firebase.google.com).
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A screenshot of all the columns you create with their boards
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Screenshot](./src/assets/screenshot-3.png)
 
-### Code Splitting
+## Reviews
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+> _"This app is truly fire, like no cap 😂"_ — Likem
 
-### Analyzing the Bundle Size
+> _"Nice one, champ 🤝"_ — Kenneth
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> _"Awesome work bro 🔥"_ — @devkobie 
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Installation and development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This app runs by default on port `3000`. 
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+git clone git@github.com:lucky-chap/nova
+cd nova
+npm i
+```
 
-### `npm run build` fails to minify
+#### After doing the above:
+##### **These steps are intended for complete beginners in using Firebase
+- Log in to your firebase [console](https://console.firebase.google.com)
+- Create a new project
+- Enter the details of the project. Disable `Google Analytics for this project` 
+- After the project is created, click on the web app icon ( `</>` ) to add an app
+- Register the nickname of the app. Make sure not to enable `Also set upFirebase Hosting for this app`
+- After the app is generated, the second step is to add the firebase SDK
+- Copy the generated firebase SDK code
+- Specifically copy the contents of the `firebaseConfig` object
+- Now go into [.env.example](./.env.example)
+- In the `firebaseConfig` object, replace the values of every key accordingly
+- For example `REACT_APP_FIREBASE_API_KEY= 'the value of the firebaseConfig.apiKey'`
+- Do the same for the rest
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Afte doing the above:
+Run the following command
+
+```bash
+npm start
+```
+
+Open your browser to [localhost:3000](http://localhost:3000) to see the app running live 👍
+
+Demo screenshot when editing a board
+
+![Screenshot](./src/assets/screenshot-4.png)
+
+## Contributing
+
+⚠️ As of now, I have not provided a guide on contribution yet, but I'm working on that
+
+
+
+
+## Acknowledgements
+
+A big thank you to all the repos I used for referencing, and even used their style of coding. Here are a few of the ones I remember.
+
+
+- [Jira Clone](https://github.com/oldboyxx/jira_clone?ref=bestofreactjs.com) (I used this the most)
+- [Personal Kanban](https://github.com/nishantpainter/personal-kanban)
+- [React Kanban](https://github.com/asseinfo/react-kanban)
+- [Firebase Kanban](https://github.com/FixterGeek/firebase-dnd-kanban)
+- [Yirichie's Kanban Board](https://github.com/yirichie/kanban-board)
+
+## Author
+
+- [Quavo](https://www.github.com/lucky-chap)
+
+## License
+
+This project is open source and available under the [MIT License](./LICENSE.txt).
