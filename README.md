@@ -2,8 +2,6 @@
 
 ![Screenshot](./src/assets/screenshot-1.png)
 
-(src/assets/nova-showcase.mp4)
-![](src/assets/nova-showcase.mp4)
 
 
 # Nova 🚀
