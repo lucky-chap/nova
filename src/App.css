@@ -183,3 +183,10 @@ progress::-moz-progress-bar {
 		transform: rotate(360deg);
 	}
 }
+
+
+.dashboard {
+	background-image: url('../src/assets/dashboard-illustration.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+}

@@ -142,7 +142,7 @@ const Kanban = ({ userId }) => {
 									<span className='text-xl'>
 										<Link
 											to='/'
-											className='text-blue-800 hover:text-blue-500 uppercase font-semibold'
+											className='text-blue-500 hover:text-blue-700 uppercase font-semibold'
 										>
 											Boards{' '}
 										</Link>
@@ -181,13 +181,13 @@ const Kanban = ({ userId }) => {
 												) : null}
 											</div>
 										</div>
-										<div className='flex items-center text-blue-900 hover:bg-blue-600 hover:text-blue-50 bg-transparent transition duration-200 cursor-pointer hover:scale-110 rounded-sm px-2 py-1 mr-3 sm:flex text-2xl'>
+										<div className='flex items-center text-blue-500 hover:bg-blue-600 hover:text-blue-50 bg-transparent transition duration-200 cursor-pointer hover:scale-110 rounded-sm px-2 py-1 mr-3 sm:flex text-2xl'>
 											<a href='https://github.com/luck-chap/nova' target='_blank' rel='noreferrer'>
 												<FaGithub />
 											</a>
 										</div>
 										<div
-											className='text-white bg-gradient-to-br from-primary via-indigo-600 to-blue-600 transform hover:scale-110 transition-all duration-300 rounded-full p-2 sm:p-1 fixed bottom-6 right-6 sm:static'
+											className='text-white bg-blue-500 transform hover:scale-110 transition-all duration-300 rounded-full p-2 sm:p-1 fixed bottom-6 right-6 sm:static'
 											onClick={() => setModal(true)}
 										>
 											<Add />
