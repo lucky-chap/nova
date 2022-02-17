@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Modal from './Modal'
 import { Exclaim, Bin } from './Icons'
 
-const BoardList = ({ logOut, boards, addNewBoard, deleteBoard, name }) => {
+const Dashboard = ({ logOut, boards, addNewBoard, deleteBoard, name }) => {
 	const [modal, setModal] = useState(false)
 	const [idToBeDeleted, setId] = useState(null)
 
@@ -30,7 +30,7 @@ const BoardList = ({ logOut, boards, addNewBoard, deleteBoard, name }) => {
 		)
 	} else
 		return (
-			<div className='bg-gradient-to-tr from-white via-blue-300 to-violet-300 h-screen px-6 py-4 sm:py-20 sm:px-24'>
+			<div className="border border-gray-200 h-screen lg:bg-dashboard bg-no-repeat bg-center px-6 py-4 sm:py-20 sm:px-24">
 				<Modal
 					modal={modal}
 					setModal={setModal}
@@ -69,19 +69,43 @@ const BoardList = ({ logOut, boards, addNewBoard, deleteBoard, name }) => {
 							👋 Welcome, {name ? name.split(' ')[0] : 'Guest'}
 						</h1>
 						<button
-							className='px-3 rounded-md bg-red-400 text-white hover:bg-white hover:text-red-500 border-2 hover:border-red-500 transition duration-500 text-sm sm:text-base'
+							className='bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-4 rounded-sm transition duration-500 text-sm md:text-md'
 							onClick={logOut}
 						>
 							{' '}
-							Log out
+							Leave
 						</button>
 					</div>
+					<form
+						onSubmit={addNewBoard}
+						autoComplete='off'
+						className='my-4 sm:my-8'
+					>
+						<label htmlFor='boardName' className='block text-xl text-blue-900'>
+							Make a new board
+						</label>
+						<div className='flex items-center mt-2 max-w-md'>
+							<input
+								required
+								type='text'
+								name='boardName'
+								className='h-12 w-full focus:border-2 focus:border-cyan-700 appearance-none block bg-gray-200 text-gray-700 border border-gray-200 rounded-sm py-3 px-4 mr-2 leading-tight focus:outline-none focus:bg-transparent'
+								placeholder='eg. Nova'
+							/>
+							<button
+								type='submit'
+								class='inline-flex justify-evenly items-center w-20 px-2 py-3 rounded-sm btn btn-primary btn-lg  sm:mb-0 mr-2 transition-colors duration-200 transform bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 text-white uppercase font-semibold'
+							>
+								Add
+							</button>
+						</div>
+					</form>
 					<div className='my-12'>
 						<h1 className='text-xl text-blue-900'>Your Boards</h1>
 						<div className='flex flex-wrap mt-2'>
 							{boards.map(b => (
 								<div
-									className='bg-white flex items-center rounded-md text-gray-700 mb-3 mr-4 py-4 px-6 shadow-md w-full sm:w-auto border-l-2 transform transition duration-500 hover:scale-110 hover:border-l-4 hover:border-blue-500 hover:z-20 flex-wrap'
+									className='bg-white flex items-center rounded-md text-gray-700 mb-3 mr-4 py-4 px-6 shadow-md w-full sm:w-auto transform transition duration-500 hover:scale-110 border-l-4 hover:border-blue-500 hover:z-20 flex-wrap'
 									key={b.id}
 								>
 									<div className='flex items-center justify-between'>
@@ -107,32 +131,8 @@ const BoardList = ({ logOut, boards, addNewBoard, deleteBoard, name }) => {
 						</div>
 					</div>
 				</div>
-				<form
-					onSubmit={addNewBoard}
-					autoComplete='off'
-					className='my-4 sm:my-8'
-				>
-					<label htmlFor='boardName' className='block text-xl text-blue-900'>
-						Make a new board
-					</label>
-					<div className='flex items-center mt-2 max-w-md'>
-						<input
-							required
-							type='text'
-							name='boardName'
-							className='w-full focus:border-2 focus:border-cyan-700 appearance-none block bg-gray-200 text-gray-700 border border-gray-200 rounded-sm py-3 px-4 mr-2 leading-tight focus:outline-none focus:bg-transparent'
-							placeholder='eg. Nova'
-						/>
-						<button
-							type='submit'
-							class='inline-flex justify-evenly items-center w-20 px-2 py-3 rounded-md mb-2 btn btn-primary btn-lg  sm:mb-0 mr-2 transition-colors duration-200 transform bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 text-white font-semibold'
-						>
-							Add
-						</button>
-					</div>
-				</form>
 			</div>
 		)
 }
 
-export default BoardList
+export default Dashboard

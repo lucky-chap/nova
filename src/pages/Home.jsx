@@ -5,6 +5,7 @@ import useBoards from '../hooks/useBoards'
 import loader from '../assets/loader.gif'
 
 import BoardList from '../components/BoardList'
+import Dashboard from '../components/Dashboard'
 
 import Kanban from './Kanban'
 
@@ -39,7 +40,7 @@ const Home = ({ logOut, userId, loginWithGoogle, name, isAnon }) => {
 			<Route
 				path='/'
 				element={
-					<BoardList
+					<Dashboard
 						deleteBoard={deleteBoard}
 						logOut={logOut}
 						boards={boards}

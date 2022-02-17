@@ -2,9 +2,7 @@ import React from 'react';
 import { AiOutlineGoogle } from 'react-icons/ai'
 import { FiUser } from 'react-icons/fi'
 
-import kanbanImage from '../assets/kanban-image.jpg'
-
-console.log(kanbanImage);
+import kanbanImage from '../assets/kanban.svg'
 
 export default function Authenticate({ loginWithGoogle, signInAnon }) {
 	return (
@@ -39,7 +37,7 @@ export default function Authenticate({ loginWithGoogle, signInAnon }) {
 					<img
 						src={kanbanImage}
 						alt='kanban-board'
-						class='w-full rounded-lg shadow-2xl'
+						class='w-full rounded-lg shadow-xl'
 					/>
 				</div>
 			</section>

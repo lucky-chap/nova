@@ -23,7 +23,6 @@ const useAuth = () => {
 			.auth()
 			.signInAnonymously()
 			.then(user => {
-				console.log('Welcome Anon')
 				createBoardForAnons(user.user.uid)
 			})
 	}

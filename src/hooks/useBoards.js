@@ -20,6 +20,7 @@ const useBoards = userId => {
 					} else return
 				} catch (e) {
 					console.log(e)
+					return null
 				}
 			})
 	}, [userId])

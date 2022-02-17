@@ -11,6 +11,9 @@ module.exports = {
 				270: '270px',
 				220: '220px',
 			},
+			backgroundImage: {
+				'dashboard': "url('/src/assets/dashboard-illustration.svg')"
+			}
 		},
 	},
 	variants: {
