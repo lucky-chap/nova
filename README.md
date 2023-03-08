@@ -101,18 +101,6 @@ Demo screenshot when editing a board
 
 
 
-
-## Acknowledgements
-
-A big thank you to all the repos I used for referencing, and even used their style of coding. Here are a few of the ones I remember.
-
-
-- [Jira Clone](https://github.com/oldboyxx/jira_clone?ref=bestofreactjs.com) (I used this the most)
-- [Personal Kanban](https://github.com/nishantpainter/personal-kanban)
-- [React Kanban](https://github.com/asseinfo/react-kanban)
-- [Firebase Kanban](https://github.com/FixterGeek/firebase-dnd-kanban)
-- [Yirichie's Kanban Board](https://github.com/yirichie/kanban-board)
-
 ## Author
 
 - [Quavo](https://www.github.com/lucky-chap)
